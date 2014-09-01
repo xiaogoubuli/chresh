@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "",
+    "name": "Chresh",
     "version": "1.0",
-    "description": "",
+    "description": "Chrome refresh extension",
     "icons": {
         "": "",
         "": "",
@@ -16,5 +16,11 @@
         },
         "default_title": "",
         "default_popup": ""
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": [""],
+            "js": ["js/chresh.js"]
+        }
+    ]
 }
